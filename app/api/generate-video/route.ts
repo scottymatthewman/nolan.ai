@@ -115,10 +115,10 @@ async function analyzeFrames(frames: string[]): Promise<any> {
             type: "text",
             text: "Analyze these frames from a Figma prototype and identify key moments or interactions. For each important frame, provide an object with 'frameIndex', 'description', and 'zoomArea' (an object with 'x', 'y', 'width', and 'height' as percentages of the frame). Return the results as a JSON array.",
           },
-          ...imageBuffers.map((buffer, index) => ({
-            type: "image_url",
-            image_url: `data:image/png;base64,${buffer.toString("base64")}`,
-          })),
+          // ...imageBuffers.map((buffer) => ({
+          //   type: "image",
+          //   image_url: `data:image/png;base64,${buffer.toString("base64")}`,
+          // })),
         ],
       },
     ],

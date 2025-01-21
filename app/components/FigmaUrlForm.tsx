@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Button } from "../../@/components/ui/button"
+import { Input } from "../../@/components/ui/input"
+import { Alert, AlertDescription } from "../../@/components/ui/alert"
 import { Loader2, AlertCircle } from "lucide-react"
 import type { GenerationStatus } from "../types/video"
 
